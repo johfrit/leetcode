@@ -15,7 +15,8 @@ public class Main {
           temp=nums[p1];
           nums[p1]=nums[p2];
           nums[p2]=temp;
-        }
+}
+
         p1++;
         }
       }
