@@ -1,0 +1,20 @@
+//use sliding window + hash set
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        Set<Character>set=new HashSet<>();
+        int left=0,right=0,maxlen=0;
+        while(right<s.length()){
+            char cur=s.charAt(right);
+            if(set.contains(cur)){
+                set.remove(s.charAt(left));
+                left++;
+            }
+            else{
+                set.add(cur);
+                maxlen=Math.max(maxlen,right-left+1);
+                right++;
+            }
+        }
+        return maxlen;
+    }
+}
