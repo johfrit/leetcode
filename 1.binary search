@@ -6,7 +6,7 @@ class Solution {
         int last=-1;
         int low=0,high=arr.length-1;
         ArrayList<Integer> al=new ArrayList<>();
-        while(low<=high){
+        while(low<=high){ 
              int mid=low+(high-low)/2;
             if(arr[mid]==x){
                 first=mid;
