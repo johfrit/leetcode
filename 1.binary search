@@ -5,7 +5,7 @@ class Solution {
         int first=-1;
         int last=-1;
         int low=0,high=arr.length-1;
-        ArrayList<Integer> al=new ArrayList<>();
+        ArrayList<Integer> al=new ArrayList<>(); 
         while(low<=high){ 
              int mid=low+(high-low)/2;
             if(arr[mid]==x){
