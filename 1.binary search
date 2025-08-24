@@ -2,7 +2,7 @@
 class Solution {
     public ArrayList<Integer> firstAndLast(int x, int arr[]) {
         // Code here
-        int first=-1;
+        int first=-1; 
         int last=-1;
         int low=0,high=arr.length-1;
         ArrayList<Integer> al=new ArrayList<>(); 
